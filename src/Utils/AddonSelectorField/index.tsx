@@ -38,7 +38,8 @@ const AddonInputField = React.forwardRef<HTMLSelectElement, Props>((
     containerStyle,
     required,
     onChange,
-    value
+    value,
+    name
   },
   ref
 ) => {
@@ -53,7 +54,7 @@ const AddonInputField = React.forwardRef<HTMLSelectElement, Props>((
         ref={ref}
         className={clsx(classes.addonInputField, error && classes.errorField, LeftIcon && classes.forleftIcon, RightIcon && classes.forRightIcon)}
         autoComplete="off"
-
+        name={name}
         required={required}
         onChange={onChange}
         value={value}

@@ -48,7 +48,7 @@ const InsertModal: React.FC<InsertModalProps> = ({ modalHandler }) => {
     const {
       target: { name, value },
     } = e;
-
+    console.log(name, value)
     setInputObj((p) => ({ ...p, [name]: value }));
   };
 
