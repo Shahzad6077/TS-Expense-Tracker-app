@@ -1,0 +1,77 @@
+@import "./Assets/mediaquries.scss";
+:root {
+  --grey: #fcf5ff;
+  --yellow: #fff7d0;
+  --salmon: #fc8171;
+  --red: #ff5d68;
+  --blue-light1-bg: #f2f7f9;
+  --blue-light2-bg: #edf5f7;
+  --blue-light3-bg: #e4edef;
+  --primary-font: "Caviar Dreams", "Source Sans Pro", "Ubuntu", sans-serif;
+  --secondary-font: "Neon 80s", "Source Sans Pro", sans-serif;
+  --mb-font: "MBPictureHouseTwoW01-Bold";
+  --primary-clr: #ff5d68;
+  --secondary-clr: #6f8ba5;
+  --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --header-font: min(max(1.3rem, calc(-0.875rem + 8.333vw)), 1.8rem);
+  --boxincome-font: min(max(0.8rem, calc(-0.875rem + 8.333vw)), 1.2rem);
+}
+
+body {
+  margin: 0;
+  font-family: var(--primary-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--grey);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+*,
+::after,
+::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1080px;
+  margin: auto;
+
+  @include media("<desktop") {
+    padding: 0px 2rem;
+  }
+  @include media("<tablet") {
+    padding: 0px 1rem;
+  }
+
+  display: flex;
+}
+
+.logo-font {
+  font-size: var(--header-font);
+}
+
+.styleScroll::-webkit-scrollbar {
+  width: 10px;
+  margin-top: 12px;
+}
+
+.styleScroll::-webkit-scrollbar-track {
+  background-color: var(--grey);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  // display: none;
+}
+
+.styleScroll::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background: var(--red);
+  background-clip: padding-box;
+}

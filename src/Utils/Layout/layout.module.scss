@@ -1,0 +1,23 @@
+@import "./../../Assets/mediaquries.scss";
+
+.layoutWrapper {
+  margin: auto;
+  margin-top: 2rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 36px;
+  color: var(--red);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+  max-width: 486px;
+  width: 100%;
+  font-weight: bolder;
+
+  margin-bottom: 2rem;
+  position: relative;
+
+  @include media("<tablet") {
+    padding: 2rem 0.8rem;
+  }
+}

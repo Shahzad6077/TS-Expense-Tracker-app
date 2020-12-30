@@ -1,0 +1,104 @@
+.addonInputWrapper {
+  width: 100%;
+  position: relative;
+  .lftSvg {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    color: #b1b1b1;
+    top: 12px;
+    left: 8px;
+  }
+  .rightSvg {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    color: #b1b1b1;
+    top: 12px;
+    right: 8px;
+  }
+}
+
+.addonInputField {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+
+  width: 100%;
+  height: 42px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  outline: 0;
+  padding: 6px 8px;
+  color: var(--cloudy-clr);
+  border: 2px solid #dce1e6;
+}
+
+.addonInputField:focus {
+  border: 2px solid #404041;
+  color: black;
+}
+
+.addonInputField::placeholder {
+  color: #404041;
+  opacity: 0.5;
+}
+.addonInputWrapper label {
+  position: absolute;
+  top: 2px;
+  left: 28px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #404041;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.addonInputField:focus ~ label,
+.addonInputField:valid ~ label {
+  top: -8px;
+  left: 20px;
+  color: #292929;
+  font-size: 14px;
+  opacity: 1;
+  background-color: white;
+  padding: 0px 4px;
+}
+
+.forleftIcon {
+  padding-left: 28px !important;
+}
+
+.forRightIcon {
+  padding-right: 28px !important;
+}
+
+.addonInputField::-webkit-outer-spin-button,
+.addonInputField::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.addonInputField[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.errorField {
+  border: solid 1px red !important;
+}
+.errorField ~ label {
+  color: red !important;
+}
+
+.helperText {
+  display: block;
+  text-align: start;
+  color: red;
+  margin-bottom: 0.5rem;
+  position: absolute;
+  left: 4px;
+}
