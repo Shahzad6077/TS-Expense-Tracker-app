@@ -7,7 +7,7 @@
   --blue-light1-bg: #f2f7f9;
   --blue-light2-bg: #edf5f7;
   --blue-light3-bg: #e4edef;
-  --primary-font: "Caviar Dreams", "Source Sans Pro", "Ubuntu", sans-serif;
+  --primary-font: "CaviarDreams", "Source Sans Pro", "Ubuntu", sans-serif;
   --secondary-font: "Neon 80s", "Source Sans Pro", sans-serif;
   --mb-font: "MBPictureHouseTwoW01-Bold";
   --primary-clr: #fc8171;
@@ -17,7 +17,24 @@
   --header-font: min(max(1.3rem, calc(-0.875rem + 8.333vw)), 1.8rem);
   --boxincome-font: min(max(0.8rem, calc(-0.875rem + 8.333vw)), 1.2rem);
 }
-
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("./Assets/CaviarDreams.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("./Assets/CaviarDreams_Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neon 80s";
+  src: url("./Assets/Neon.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 body {
   margin: 0;
   font-family: var(--primary-font);

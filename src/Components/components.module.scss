@@ -8,7 +8,7 @@
   h1 {
     font-family: var(--secondary-font);
     font-weight: bolder;
-    color: var(--red);
+    color: var(--salmon);
   }
 }
 
@@ -130,7 +130,7 @@
       &[data-type="EXPENSE"] {
         background-color: #f6dcda;
         svg {
-          fill: var(--red);
+          fill: var(--salmon);
         }
       }
       &[data-type="INCOME"] {
@@ -206,11 +206,11 @@
       transition: all 100ms ease-in;
       display: flex;
       opacity: 0;
-      // background-color: var(--red);
+      // background-color: var(--salmon);
       cursor: pointer;
       svg {
         // fill: #fff;
-        fill: var(--red);
+        fill: var(--salmon);
       }
     }
 
@@ -295,14 +295,14 @@
       &:nth-child(1),
       &:nth-child(2) {
         border-radius: 46px;
-        background-color: var(--red);
+        background-color: var(--salmon);
         color: var(--yellow);
         // padding: 1.5rem;
 
         padding: var(--boxincome-font);
       }
       &:nth-child(1) {
-        color: var(--red) !important;
+        color: var(--salmon) !important;
         background-color: var(--yellow) !important;
       }
 
@@ -350,7 +350,7 @@
     right: 0px;
     outline: none;
     border: none;
-    background-color: var(--red);
+    background-color: var(--salmon);
     border-top-left-radius: 36px;
     width: 30%;
     display: flex;
@@ -380,7 +380,7 @@
     svg {
       width: 26px;
       height: 26px;
-      fill: var(--red);
+      fill: var(--salmon);
       transform: rotate(45deg);
     }
   }

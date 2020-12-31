@@ -1,5 +1,5 @@
-# Expense Tracker App with Typescript & PWA ( 1 )
+# Expense Tracker App with Typescript & PWA ( 7a )
 
 ## `Check the below link to visit the app`
 
-Open [expensetracker-shahzad.surge.sh](https://expensetracker-shahzad.surge.sh/) to view it in the browser.
+Open [expensetrackerts-shahzad.surge.sh](https://expensetrackerts-shahzad.surge.sh/) to view it in the browser.
