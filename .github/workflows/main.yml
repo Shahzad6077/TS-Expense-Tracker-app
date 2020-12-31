@@ -51,4 +51,4 @@ jobs:
         run: sudo cp ./build/index.html ./build/200.html && sudo rm ./build/index.html
       # Deploy Surge
       - name: Deploy React App to Surge
-        run: surge ./build expensetrackerts-shahzad.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build https://expensetrackerts-shahzad.surge.sh --token ${{ secrets.SURGE_TOKEN }}
